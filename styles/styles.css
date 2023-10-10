@@ -1,0 +1,526 @@
+
+.centrada {
+  display: block;
+  margin: 0 auto;
+  width: 195px;
+  height: 46.1063px;
+}
+
+
+.menucostado {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menucostado span {
+  margin-inline: 10px;
+  text-align: right;
+}
+
+.menucostado span {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+span {
+  text-decoration: none;
+  color: black;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  gap: 550px;
+}
+
+.imagenes img {
+  width: 450px;
+  height: 800px;
+  margin-top: -170px;
+}
+
+
+.fondonegro {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
+
+
+.menunormal {
+  list-style: none;
+  padding: 0;
+  position: left;
+  top: 0;
+  right: 0;
+  padding: 30px;
+}
+
+.menunormal li {
+  display: block;
+  margin-right: 20px;
+}
+
+.menunormal li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+  "foto-1 foto-2 foto-3 foto-4"
+  "foto-5 foto-6 foto-7 foto-8"
+  "foto-4 foto-5 foto-6 foto-6"
+  "foto-7 foto-8 foto-8 foto-9";
+  grid-gap: 5px;
+}
+
+.grid-container div img {
+  width: 200px;
+  height: 200px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  display: grid;
+  object-fit: cover;
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  
+.centrada {
+  display: block;
+  margin: 0 auto;
+  width: 195px;
+  height: 46.1063px;
+}
+
+
+.menucostado {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column; 
+  align-items: flex-end; 
+}
+
+.menucostado span {
+  margin-inline: 10px;
+  text-align: right;
+  color: rgb(2, 2, 2);
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #f0f0f0;
+  border: 2px solid #333;
+  margin: px;
+  padding: px;
+  text-align: left;
+  display: grid;
+}
+}
+  
+.carousel {
+  width: 1400px;
+  height: 840px;
+  margin-left: auto;
+  margin-right: 150px;
+  margin-top: -160px;
+  
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  
+}
+
+
+
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
