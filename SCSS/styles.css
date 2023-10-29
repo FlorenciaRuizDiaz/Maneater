@@ -1,0 +1,35 @@
+.centrada {
+  display: block;
+  margin: 0 auto;
+  width: 195px;
+  height: 46.1063px;
+}
+
+.menucostado {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menucostado span {
+  margin-inline: 10px;
+  text-align: right;
+}
+
+.menucostado span {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+span {
+  text-decoration: none;
+  color: black;
+}
+/*# sourceMappingURL=styles.css.map */
