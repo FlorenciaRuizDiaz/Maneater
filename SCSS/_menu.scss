@@ -1,0 +1,43 @@
+/*menu normal*/
+.menunormal {
+    list-style: none;
+    padding: 0;
+    position: left;
+    top: 0;
+    right: 0;
+    padding: 30px;
+  
+    li {
+      display: block;
+      margin-right: 20px;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-family: $font-family;
+      }
+    }
+  }
+  
+  /*menu blanco*/
+  .menunormal, .menunormalblanco {
+    list-style: none;
+    padding: 0;
+    position: left;
+    top: 0;
+    right: 0;
+    padding: 30px;
+  
+    li {
+      display: block;
+      margin-right: 20px;
+  
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        font-family: $font-family;
+      }
+    }
+  }

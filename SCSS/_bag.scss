@@ -1,0 +1,28 @@
+/*bag*/
+.card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  
+    .card {
+      font-family: $font-family;
+      border-radius: 5px;
+      border: 1px solid $primary-color;
+      font-size: 14px;
+      width: 200px;
+  
+      &-img {
+        height: 200px;
+        width: 200px;
+      }
+  
+      &.boton {
+        @include button-style($primary-color, white);
+        background-color: $primary-color;
+  
+        &.pink {
+          background-color: pink;
+        }
+      }
+    }
+}
