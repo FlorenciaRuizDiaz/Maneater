@@ -1,31 +1,25 @@
 /* productos */
-.flex-container {
-    display: flex;
-    justify-content: flex-end;
-    justify-content: space-around;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
     "foto-1 foto-2 foto-3 foto-4"
     "foto-5 foto-6 foto-7 foto-8"
-    "foto-4 foto-5 foto-6 foto-6"
-    "foto-7 foto-8 foto-8 foto-9";
-    grid-gap: 5px;
-  
-    div {
-      img {
-        width: 200px;
-        height: 200px;
-        background-color: $background-color;
-        border: 2px solid $border-color;
-        margin: 20px;
-        padding: 10px;
-        text-align: center;
-        display: grid;
-        object-fit: cover;
-      }
+    "foto-9 foto-10 foto-11 foto-12"
+    "foto-13 foto-14 foto-15 foto-16"; // Cambié los nombres aquí
+  grid-gap: 5px;
+
+  div {
+    img {
+      width: 200px;
+      height: 200px;
+      background-color: $background-color;
+      border: 2px solid $border-color;
+      margin: 20px;
+      padding: 10px;
+      text-align: center;
+      display: grid;
+      object-fit: cover;
     }
   }
+}

@@ -1747,19 +1747,11 @@ li h2 {
   align-items: flex-end;
 }
 
-.imagen-cinivierno {
+.imagen-cinvierno {
   display: flex;
   width: 280px;
   height: 480px;
   margin-top: 50px;
-  margin-right: 500px;
-  margin-left: 100px; 
-}
-
-
-.imagen-cards {
-  max-width: 100%;
-  height: auto;
   margin-right: 500px;
   margin-left: 100px; 
 }
@@ -1781,6 +1773,12 @@ li h2 {
     transform: translateY(0);
     opacity: 1;
   }
+}
+.imagen-cards {
+  max-width: 100%;
+  height: auto;
+  margin-right: 500px;
+  margin-left: 100px; 
 }
 
 .imagenes-invierno a {
@@ -1866,8 +1864,6 @@ li h2 {
   .imagenes-verano {
     margin-left: 0px;
     margin-top: -170px;
-    
-    
   }
 
   .imagenes-verano img {
@@ -1973,7 +1969,7 @@ li h2 {
   
 }
 
- /* pantalla pantalla INVIERNO CHICO*/
+ /* pantalla pantalla INVIERNO MEDIANO*/
 @media (min-width: 768px) and (max-width: 1200px) {
   .centrada {
     display: block;
@@ -1994,7 +1990,7 @@ li h2 {
     align-items: flex-end;
   }
   
-  .imagen-cinivierno {
+  .imagen-cinvierno {
     display: flex;
     width: 280px;
     height: 480px;

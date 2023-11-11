@@ -1,52 +1,52 @@
 /* header */
 .centrada {
-    display: block;
-    margin: 0 auto;
-    width: 195px;
-    height: 46.1063px;
-  }
-  
-  .menucostado {
-    list-style: none;
-    padding: 0;
-    position: fixed;
-    top: 0;
-    right: 0;
-    padding: 30px;
-    display: flex;
-    justify-content: space-evenly;
-  
-    span {
-      margin-inline: 10px;
-      text-align: right;
-      text-decoration: none;
-      color: #020202;
-      font-size: 18px;
-      font-family: $font-family;
-    }
-  }
-  
-  span {
+  display: block;
+  margin: 0 auto;
+  width: 195px;
+  height: 46.1063px;
+}
+
+.menucostado {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+
+  .span {
+    margin-inline: 10px;
+    text-align: right;
     text-decoration: none;
-    color: black;
+    color: #020202;
+    font-size: 18px;
+    font-family: $font-family;
   }
-  
-  .imagenes {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    gap: 550px;
-  
-    img {
-      width: 450px;
-      height: 800px;
-      margin-top: -170px;
-    }
+}
+
+.span {
+  text-decoration: none;
+  color: black;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  gap: 550px;
+
+  img {
+    width: 450px;
+    height: 800px;
+    margin-top: -170px;
   }
-  
-  .fondonegro {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    margin-top: 100px;
-  }
+}
+
+.fondonegro {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+}
