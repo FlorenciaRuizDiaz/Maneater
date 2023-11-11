@@ -1,4 +1,4 @@
-/*bag*/
+/* bag */
 .card-container {
     display: flex;
     gap: 30px;
@@ -17,7 +17,7 @@
       }
   
       &.boton {
-        @include button-style($primary-color, white);
+        @include button-sstyle($primary-color, white);
         background-color: $primary-color;
   
         &.pink {
