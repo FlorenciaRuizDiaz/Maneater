@@ -77,14 +77,6 @@ span {
 }
 
 /*fin animacion*/
-
-.fondonegro {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin-top: 100px;
-}
-
 /* menu normal */
 .menunormal {
   list-style: none;
@@ -93,11 +85,13 @@ span {
   top: 0;
   right: 0;
   padding: 30px;
+  text-decoration: none;
 }
 
 .menunormal li {
   display: block;
   margin-right: 20px;
+  text-decoration: none;
 }
 
 .menunormal li a {
@@ -106,8 +100,34 @@ span {
   font-size: 18px;
   font-family: 'Poppins', sans-serif;
 }
+a {
+  text-decoration: none;
+}
+
 
 /* pagina de productos (con grid)*/
+.headerimg {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  gap: 550px;
+  width: 1850px;
+  height: 803px;
+  margin-top: 10px;
+  animation: slideInDown 2s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .flex-container {
   display: flex;
   justify-content: flex-end;
@@ -123,6 +143,7 @@ span {
   "foto-4 foto-5 foto-6 foto-6"
   "foto-7 foto-8 foto-8 foto-9";
   grid-gap: 5px;
+  margin-top: -200px;
 }
 
 .grid-container div img {
@@ -209,79 +230,111 @@ span {
 }
 
 /* pagina de coleccion de invierno */
-.imagenes-invierno {
-  display: flex; 
-  justify-content: right; 
+.imagen-cinivierno {
+  display: flex;
+  width: 480px;
+  height: 700px;
+  margin-top: -170px;
+  margin-right: 500px;
+  margin-left: 600px; 
+}
+
+
+.imagen-cards {
+  max-width: 100%;
+  height: auto;
+  margin-right: 100px;
+}
+
+.imagen-cinvierno {
+  display: flex;
+  justify-content: right;
   align-items: right;
-  width: 100%; 
   gap: 50px;
+  animation: slideInDown 2s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .imagenes-invierno a {
   display: block;
-  text-align: center; 
+  text-align: center;
 }
 
 .imagenes-invierno img {
-  width: 661px;
+  width: 700px;
   height: auto;
   margin-top: -170px;
+  margin-right: -500px;
 }
+
+.cards-container {
+  flex-direction: column;
+  justify-content: ;
+  margin-bottom: 100px;
+  margin-top: -700px;
+  margin-right: 500px;
+  margin-left: 1300px; 
+}
+
+.card-invierno {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px; 
+}
+
+.card-details {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
+  
+}
+
+
+.card-imagen {
+  max-width: 100%; 
+  height: auto; 
+  margin-right: 100px;
+}
+
+.boton {
+  background-color: #fdb2d5;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+}
+
+.boton.pink {
+  background-color: pink;
+}
+
 /* pagina de coleccion de verano*/
 
-.pagina-negra {
-  background-color: black;
-  color: white;
-}
-
-.imagen-verano img {
-  width: 1237px;
-  height: 695px;
+.imagenes-verano {
   display: block;
-  margin: 0 auto;
-}
-/* menu version blanco */ 
-
-.menublanco {
-  list-style: none;
-  padding: 0;
-  position: fixed;
-  top: 70px;
-  right: 0;
-  padding: 30px;
-  display: flex;
-  flex-direction: column; 
-  align-items: flex-end; 
+  width: 1200px;
+  height: 669px;
+  margin-left: 400px;
+  margin-top: -170px;
+  animation: slideInLeft 1s forwards; 
 }
 
-.menublanco span {
-  margin-inline: 10px;
-  text-align: right;
-  color: white;
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.menunormalblanco {
-  list-style: none;
-  padding: 0;
-  position: left;
-  top: 0;
-  right: 0;
-  padding: 30px;
-}
-
-.menunormalblanco li {
-  display: block;
-  margin-right: 20px;
-}
-
-.menunormalblanco li a {
-  text-decoration: none;
-  color: white
-  font-size: 18px;
-  font-family: 'Poppins', sans-serif;
-} 
 
 /* pagina de login */
 
@@ -399,8 +452,6 @@ li h2 {
 
 .card {
   font-family: 'Poppins', sans-serif;
-  border-radius: 5px;
-  border: 1px solid #fdb2d5;
   font-size: 14px;
   width: 200px;
 }
@@ -415,11 +466,11 @@ li h2 {
   color: white;
   text-decoration: none;
   padding: 5px 10px;
-  border-radius: 20px; 
-  margin: px auto; 
+  border-radius: 20px;
+  margin: 0 auto;
   display: inline-block;
   text-align: center;
-  width: 120px; 
+  width: 100px;
 }
 
 .boton.pink {
@@ -427,7 +478,7 @@ li h2 {
 }
 
 /*INICIO DE MEDIA @*/
-/* media query para pantallas entre 480px y 896px index PEQUEÑOS*/
+/* media query para pantallas entre 480px y 896px INDEX PEQUEÑOS*/
 @media (min-width: 480px) and (max-width: 896px) {
   .centrada {
     display: block;
@@ -439,13 +490,14 @@ li h2 {
   .menucostado {
     list-style: none;
     padding: 0;
-    position: fixed;
+    position: static;
     top: 70px;
     right: 0;
     padding: 30px;
     display: flex;
     flex-direction: column; 
     align-items: flex-end; 
+    
   }
   
   .menucostado span {
@@ -534,7 +586,7 @@ li h2 {
     font-size: 14px;
   }
 }
-  /* media query para pantallas entre 768px y 1200px todos los productos MEDIANOS*/
+  /* media query para pantallas entre 768px y 1200px todos los PRODUCTOS MEDIANOS*/
 @media (min-width: 768px) and (max-width: 1200px) {
   
   .centrada {
@@ -552,16 +604,21 @@ li h2 {
     right: 0;
     padding: 30px;
     display: flex;
-    flex-direction: column; 
-    align-items: flex-end; 
+    flex-direction: column;
+    align-items: flex-end;
   }
   
-  .menucostado span {
-    margin-inline: 10px;
-    text-align: right;
-    color: rgb(2, 2, 2);
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+  .headerimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 550px;
+    width: 800px;
+    height: 470px;
+    margin-top: 10px;
+    clear: both;
+    margin-left: 180px;
+    animation: slideInDown 2s ease;
   }
   
   .flex-container {
@@ -574,29 +631,33 @@ li h2 {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
     grid-gap: 5px;
+    margin-right: -80px;
   }
   
   .box {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     background-color: #f0f0f0;
     border: 2px solid #333;
-    margin: px;
     padding: px;
     text-align: left;
     display: grid;
+    
   }
-
+  
   footer {
-    background-color: transparent; 
+    background-color: transparent;
     color: #fdb2d5;
-    padding: 10px;
     text-align: center;
+    position: relative;
+    bottom: 0px;
+    margin-right: -500px; 
   }
   
   .footer-content {
     margin-top: 350px;
     margin-bottom: 10px;
+    padding: 12px;
   }
   
   h3, h4 {
@@ -609,7 +670,6 @@ li h2 {
   }
   
   .footer-bottom {
-    background-color: white; 
     padding: 10px;
     text-align: center;
   }
@@ -620,7 +680,6 @@ li h2 {
   }
   
   h2 a {
-    color: white;
     text-decoration: none;
   }
   
@@ -628,11 +687,9 @@ li h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
   }
-
-  }
-
+}
   
- /* media query para pantallas entre 768px y 1200px index MEDIANOS*/
+ /* media query para pantallas entre 768px y 1200px INDEX MEDIANOS*/
 @media (min-width: 768px) and (max-width: 1200px) {
   .centrada {
     display: block;
@@ -644,7 +701,7 @@ li h2 {
   .menucostado {
     list-style: none;
     padding: 0;
-    position: fixed;
+    position: absolute;
     top: 70px;
     right: 0;
     padding: 30px;
@@ -686,33 +743,30 @@ li h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 70px;
   }
-
+  
   .imagenes img {
     width: 480px;
     height: 800px;
-    margin-top: 150px;
+    margin-top: -100px;
     margin-bottom: 0;
   }
-
-  .fondonegro {
-    text-align: center;
-  }
-
-  .fondonegro img {
-    max-width: 100px;
-  }
+  
 
   footer {
-    background-color: transparent; 
+    background-color: transparent;
     color: #fdb2d5;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
   
   .footer-content {
-    margin-top: 350px;
-    margin-bottom: 10px;
+    margin-top: 0px; 
+    margin-bottom: 0px;
   }
   
   h3, h4 {
@@ -725,8 +779,8 @@ li h2 {
   }
   
   .footer-bottom {
-    background-color: white; 
-    padding: 10px;
+    background-color: transparent;
+    padding: 0px;
     text-align: center;
   }
   
@@ -736,7 +790,7 @@ li h2 {
   }
   
   h2 a {
-    color: white;
+    color: transparent;
     text-decoration: none;
   }
   
@@ -744,10 +798,8 @@ li h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
   }
-
 }
-  
-  /* media query para pantallas entre 480px y 896px todos los productos PEQUEÑAS*/
+  /* media query para pantallas entre 480px y 896px todos los PRODUCTOS PEQUEÑAS*/
 @media (min-width: 480px) and (max-width: 896px) {
   
   .centrada {
@@ -777,25 +829,16 @@ li h2 {
     font-family: 'Poppins', sans-serif;
   }
   
-  .menunormal {
-    list-style: none;
-    padding: 0;
-    position: left;
-    top: 0;
-    right: 0;
-    padding: 30px;
-  }
   
-  .menunormal li {
-    display: block;
-    margin-right: 20px;
-  }
-  
-  .menunormal li a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-family: 'Poppins', sans-serif;
+  .headerimg {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 470px;
+    height: 240px;
+    margin-top: 10px;
+    clear: both;
+    animation: slideInDown 2s ease;
   }
 
   .flex-container {
@@ -867,7 +910,7 @@ li h2 {
 
   }
 
-/* pantalla chica de nuevo 480px 896px*/
+/* pantalla  480px 896px NUEVO CHICA*/
 
   @media (min-width: 480px) and (max-width: 896px) {
   
@@ -946,15 +989,16 @@ li h2 {
     }
 
     footer {
-      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      background-color: transparent; 
       color: #fdb2d5;
       padding: 10px;
       text-align: center;
-      margin-top: 450px;
     }
     
     .footer-content {
-      margin-top: 350px;
+      margin-top: 400px;
       margin-bottom: 10px;
     }
     
@@ -968,7 +1012,7 @@ li h2 {
     }
     
     .footer-bottom {
-      background-color: transparent;
+      background-color: white; 
       padding: 10px;
       text-align: center;
     }
@@ -979,7 +1023,7 @@ li h2 {
     }
     
     h2 a {
-      color: transparent;
+      color: white;
       text-decoration: none;
     }
     
@@ -987,8 +1031,9 @@ li h2 {
       font-family: 'Poppins', sans-serif;
       font-size: 14px;
     }
-  }
-/* pantalla mediana de nuevo 768px 1200px*/
+  
+    }
+/* pantalla 768px 1200px MEDIANO NUEVO*/
   @media (min-width: 768px) and (max-width: 1200px) {
   
     .centrada {
@@ -1118,7 +1163,7 @@ li h2 {
 
   } 
 
-/* pantalla login pantalla pequeña*/
+/* pantalla LOGIN CHICO*/
 
 @media (min-width: 480px) and (max-width: 896px) {
   
@@ -1214,11 +1259,12 @@ li h2 {
     color: #fdb2d5;
     padding: 10px;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 250px;
   }
   
   .footer-content {
     margin-bottom: 10px;
+    margin-top: 340px;
   }
   
   h3, h4 {
@@ -1252,7 +1298,7 @@ li h2 {
   }
 }
   
-  /*pantalla mediana de login*/
+  /*pantalla LOGIN MEDIANO*/
 
 @media (min-width: 768px) and (max-width: 1200px) {
    .centrada {
@@ -1343,7 +1389,7 @@ li h2 {
     background-color: #6e485a;
   }
 
-  /* Resto de tus estilos CSS aquí */
+  
 
 .footer {
   width: 100%;
@@ -1356,7 +1402,7 @@ li h2 {
   margin-top: -500zpx;
 }
 
-/* Resto de tus estilos CSS aquí */
+
 
   
   .footer-content {
@@ -1401,7 +1447,7 @@ li h2 {
   } 
 }
   
-/*pantalla de coleccion pequeña*/
+/*pantalla de COLECCION CHICO*/
 @media (min-width: 480px) and (max-width: 896px) {
   
   .centrada {
@@ -1541,7 +1587,7 @@ li h2 {
   }
    }
   
-/*pantalla de coleccion mediana*/
+/*pantalla de COLECCION MEDIANO*/
 @media (min-width: 768px) and (max-width: 1200px) {
    .centrada {
     display: block;
@@ -1679,25 +1725,370 @@ li h2 {
   }
 
 } 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-  
-  
-  
-  
-  
+/* pantalla pantalla INVIERNO CHICO*/
+@media (min-width: 480px) and (max-width: 896px) {
+.centrada {
+  display: block;
+  margin: 0 auto;
+  width: 195px;
+  height: 46.1063px;
+}
 
+.menucostado {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+  top: 70px;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.imagen-cinivierno {
+  display: flex;
+  width: 280px;
+  height: 480px;
+  margin-top: 50px;
+  margin-right: 500px;
+  margin-left: 100px; 
+}
+
+
+.imagen-cards {
+  max-width: 100%;
+  height: auto;
+  margin-right: 500px;
+  margin-left: 100px; 
+}
+
+.imagen-cinvierno {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  gap: 50px;
+  animation: slideInDown 2s ease;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.imagenes-invierno a {
+  display: block;
+  text-align: center;
+}
+
+.imagenes-invierno img {
+  width: 700px;
+  height: auto;
+  margin-top: -170px;
+  margin-right: -500px;
+}
+
+.cards-container {
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  margin-right: 350px;
+  margin-left: 170px; 
+}
+
+.card-invierno {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px; 
+}
+
+.card-details {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 200px;
   
+}
+
+
+.card-imagen {
+  max-width: 100%; 
+  height: auto; 
+  margin-right: 100px;
+}
+
+.boton {
+  background-color: #fdb2d5;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  width: 100px;
+}
+
+.boton.pink {
+  background-color: pink;
+}
+}
+  
+ /* pantalla pantalla VERANO MEDIANO*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .centrada {
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+    height: 46.1063px;
+  }
+  
+  .menucostado {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  } 
+  
+  .imagenes-verano {
+    margin-left: 0px;
+    margin-top: -170px;
+    width: 720px;  
+    height: 480px;
+    
+  }
+
+  .imagenes-verano img {
+    width: 720px;  
+    height: 480px;
+    margin-left: 0px;
+    margin-top: 170px;
+    
+    animation: slideInLeft 1s forwards; 
+  }
+}
+
+/* pantalla pantalla VERANO CHICO*/
+@media (min-width: 480px) and (max-width: 896px) {
+  .centrada {
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+    height: 46.1063px;
+  }
+  
+  .menucostado {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  } 
+  
+  .imagenes-verano {
+    margin-left: 0px;
+    margin-top: -170px;
+    
+  }
+
+  .imagenes-verano img {
+    width: 480px;  
+    height: 350px;
+    margin-left: 0px;
+    margin-top: 170px;
+    
+    animation: slideInLeft 1s forwards; 
+  }
+}
+  
+  /* pantalla pantalla BAG CHICO*/
+@media (min-width: 480px) and (max-width: 896px) {
+  .centrada {
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+    height: 46.1063px;
+  }
+  
+  .menucostado {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  } 
+  .card-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .card {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 200px;
+    margin-bottom: 10px; 
+  }
+  
+  .card-img {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .boton {
+    background-color: #fdb2d5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100px;
+    display: inline-block;
+  }
+  
+  .boton.pink {
+    background-color: pink;
+  }
+  
+  
+}
+
+ /* pantalla pantalla INVIERNO CHICO*/
+@media (min-width: 768px) and (max-width: 1200px) {
+  .centrada {
+    display: block;
+    margin: 0 auto;
+    width: 195px;
+    height: 46.1063px;
+  }
+  
+  .menucostado {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 70px;
+    right: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .imagen-cinivierno {
+    display: flex;
+    width: 280px;
+    height: 480px;
+    margin-top: 50px;
+    margin-right: 500px;
+    margin-left: 250px; 
+  }
+  
+  
+  .imagen-cards {
+    max-width: 100%;
+    height: auto;
+    margin-right: 500px;
+    margin-left: 250px; 
+  }
+  
+  .imagen-cinvierno {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    gap: 50px;
+    animation: slideInDown 2s ease;
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .imagenes-invierno a {
+    display: block;
+    text-align: center;
+  }
+  
+  .imagenes-invierno img {
+    width: 700px;
+    height: auto;
+    margin-top: -170px;
+    margin-right: -500px;
+  }
+  
+  .cards-container {
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-right: 350px;
+    margin-left: 300px; 
+  }
+  
+  .card-invierno {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 10px; 
+  }
+  
+  .card-details {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 200px;
+    
+  }
+  
+  
+  .card-imagen {
+    max-width: 100%; 
+    height: auto; 
+    margin-right: 100px;
+  }
+  
+  .boton {
+    background-color: #fdb2d5;
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+  }
+  
+  .boton.pink {
+    background-color: pink;
+  }
+  } 
   
   
   
